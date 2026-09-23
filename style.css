@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #bdafc0;
+    display: flex;
+    flex-direction: column;
+    color: #5a1c5c;
+}
+.ascii-background {
+    position: fixed;
+    left: 1px;
+    bottom: 1px;
+    font-family: monospace;
+    font-size: 12px;
+    color: #948197;
+    white-space: pre;
+    margin: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Área principal */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+/* Card */
+.card {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 10px 30px #2f2c3000;
+    text-align: center;
+}
+
+/* Cabeçalho */
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.header h3 {
+    color:#895f8f;
+    margin-top: 8px;
+}
+.header p {
+    color: #6b7280;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+/* Formulário */
+.form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid #dbd1db;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #c325eb;
+    box-shadow: 0 0 0 3px rgba(117, 17, 156, 0.1);
+}
+
+/* Botões */
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary {
+    background: #81479c;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #a02099;
+}
+
+.btn-download {
+    width: 100%;
+    background: #a02099;
+    color: white;
+    margin-top: 25px;
+}
+
+.btn-download:hover:not(:disabled) {
+    background: #e40bd9;
+}
+
+.btn-download:disabled {
+    background: #d1d5db;
+    color: #6b7280;
+    cursor: not-allowed;
+}
+
+/* QR Code */
+.qr-area {
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #e5e7eb;
+    border-radius: 14px;
+    padding: 15px;
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+}
+
+#qrMessage {
+    color: #9ca3af;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+footer a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Celular */
+@media (max-width: 550px) {
+
+    .card {
+        padding: 25px 20px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .qr-area {
+        min-height: 280px;
+    }
+
+    #qrcode canvas {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
