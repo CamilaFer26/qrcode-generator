@@ -7,9 +7,25 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header class="site-header">
+        <a class="logo">QR Code Generator</a>
+        <nav>
+            <div class="about">
+                <a href="#">Sobre</a>
+                <div class="about-text">
+                    Gerador de QR Code simples e gratuito com a biblioteca qr-code-styling
+                </div> 
+            </div>
+            
+            <a href="https://github.com/CamilaFer26/qrcode-generator" target="_blank">GitHub</a>
+        </nav>
+    </header>
     <pre class="ascii-background">
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⣤⣀⠀⠀⠀⠀⠀⣀⣀⣠⠀⠀⢀⠁⠀⠀⠀⢀⣠⡤⠤⢤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -61,7 +77,6 @@
         <div class="card">
             <div class="header">
                 <h1>QRCode Generator</h1>
-                <h3>Simples e gratuito</h3>
                 <p>Digite um texto ou endereço para gerar seu QR Code:</p>
             </div>
 
@@ -85,14 +100,5 @@
             </button>
         </div>
     </main>
-
-    <footer>
-        <p>
-            Desenvolvido por
-            <a href="https://github.com/CamilaFer26" target="_blank">
-                Camila
-            </a>
-        </p>
-    </footer>
 </body>
 </html>
