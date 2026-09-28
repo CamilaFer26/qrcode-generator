@@ -106,18 +106,8 @@ body {
     z-index: 1;
 }
 
-/* cads lado a lado */ 
-.cards {
-    width: min(100%, 880px);
-    display: grid;
-    grid-template-columns: minmax(0, 500px) minmax(280px, 340px);
-    align-items: start;
-    justify-content: center;
-    gap: 22px;
-}
-
-/***** QRCode Card ******/
-.qrcode-card {
+/* Card */
+.card {
     width: 100%;
     max-width: 500px;
     background: white;
@@ -225,17 +215,6 @@ button {
 
 #qrMessage {
     color: #9ca3af;
-}
-
-/***** Personalization Card ******/
-.personalization-card {
-    width: 100%;
-    max-width: 500px;
-    background: white;
-    border-radius: 18px;
-    padding: 20px;
-    box-shadow: 0 10px 30px var(--color-shadow);
-    text-align: center;
 }
 
 @media (max-width: 550px) {

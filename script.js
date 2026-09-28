@@ -1,19 +1,10 @@
 let qrcode = null;
 
-function getChoices() {
-    return {
-        color: document.getElementById("qrColor").value,
-        bgColor: document.getElementById("bgColor").value
-    }
-}
-
 function generateQR() {
     const text = document.getElementById("text").value.trim();
     const qrContainer =document.getElementById("qrcode");
     const qrMessage = document.getElementById("qrMessage");
     const downloadButton = document.getElementById("downloadButton");
-    
-    const {color, bgColor} = getChoices();
 
     if (!text) {
         alert("Por favor, insira um texto ou URL!");
@@ -29,7 +20,7 @@ function generateQR() {
         margin: 10,
 
         dotsOptions: {
-            color: color
+            color: "#111827",
         },
 
         cornersSquareOptions: {
@@ -41,7 +32,7 @@ function generateQR() {
         },
 
         backgroundOptions: {
-            color: bgColor
+            color: "#ffffff"
         }
     });
     qrcode.append(qrContainer);

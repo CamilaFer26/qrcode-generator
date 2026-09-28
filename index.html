@@ -74,52 +74,30 @@
     </pre>
 
     <main class="container">
-        <div class="cards">
-            <section class="qrcode-card">
-                <div class="header">
-                    <h1>QRCode Generator</h1>
-                    <p>Digite um texto ou endereço para gerar seu QR Code:</p>
-                </div>
+        <div class="card">
+            <div class="header">
+                <h1>QRCode Generator</h1>
+                <p>Digite um texto ou endereço para gerar seu QR Code:</p>
+            </div>
 
-                <div class="form">
-                    <input type="text" id="text" placeholder="https://exemplo.com">
+            <div class="form">
+                <input type="text" id="text" placeholder="https://exemplo.com">
 
-                    <button class="btn-primary" onclick="generateQR()">
-                        Gerar QR Code
-                    </button>
-                </div>
-
-                <div class="qr-area">
-                    <div id="qrcode"></div>
-                    <p id="qrMessage">
-                        Seu QR Code aparecerá aqui
-                    </p>
-                </div>
-
-                <button id="downloadButton" class="btn-download" onclick="downloadQR()" disabled>
-                    Baixar QR Code
+                <button class="btn-primary" onclick="generateQR()">
+                    Gerar QR Code
                 </button>
-            </section>
-            <aside  class="personalization-card">
-                <div class="header">
-                    <h1>Personalização</h1>
-                    <p>Ajuste a aparência do seu QR Code aqui!</p>
-                </div>
-                <div class="customization-options">
-                    <label class="controls" for="qrColor">
-                        <div class="color-control">
-                            <p>Cor do QR Code</p>
-                            <input type="color" id="qrColor" value="#000000">
-                        </div>
-                    </label>
-                    <label class="controls" for="bgColor">
-                        <div class="color-control">
-                            <p>Cor de fundo</p>
-                            <input type="color" id="bgColor" value="#ffffff">
-                        </div>
-                    </label>
-                </div>
-            </aside>
+            </div>
+
+            <div class="qr-area">
+                <div id="qrcode"></div>
+                <p id="qrMessage">
+                    Seu QR Code aparecerá aqui
+                </p>
+            </div>
+
+            <button id="downloadButton" class="btn-download" onclick="downloadQR()" disabled>
+                Baixar QR Code
+            </button>
         </div>
     </main>
 </body>
